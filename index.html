@@ -40,6 +40,10 @@
         <div class="search-btn">
           <i class="search-icon ti-search"></i>
         </div>
+
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon ti-menu"></i>
+        </div>
         <!-- End: Search button -->
       </div>
 
@@ -311,6 +315,16 @@
       modalContainer.addEventListener("click", function (event) {
         event.stopPropagation();
       });
+
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === 46;
+        if (isClosed) {
+          header.style.height = "auto";
+        }
+      };
     </script>
   </body>
 </html>
