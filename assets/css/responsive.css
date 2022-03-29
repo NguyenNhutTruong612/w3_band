@@ -14,6 +14,17 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+  #header {
+    overflow: hidden;
+  }
+
+  #header .mobile-menu-btn {
+    display: block;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
   #nav {
     display: block;
   }
@@ -26,11 +37,7 @@
     display: inline-block;
   }
 
-  #header .mobile-menu-btn {
-    display: block;
-  }
-
-  #header .search-btn {
-    display: none;
+  #nav .subnav {
+    position: initial;
   }
 }
